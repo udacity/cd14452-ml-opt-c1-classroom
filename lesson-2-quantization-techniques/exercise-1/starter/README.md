@@ -1,4 +1,4 @@
-# Exercise 1 — Starter Walkthrough (Focused, No‑Code)
+# Exercise 1 — Starter Walkthrough 
 
 This guide is tailored to **Exercise_1_starter_revised.ipynb**. It highlights the **important parts you must implement**, explains **what good output looks like**, and links to the right documentation. Use this to finish the starter before checking any solution.
 
