@@ -1,4 +1,4 @@
-# Exercise 1 — Solution Walkthrough (Focused)
+# Exercise 1 — Solution Walkthrough
 
 This walkthrough highlights the **important parts** of the reference solution for *Exercise_1_solution_revised.ipynb* and skims everything else. Use it to understand how the solution is structured, what to look for in the outputs, and how to validate your own work.
 
