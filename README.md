@@ -35,3 +35,22 @@ Each `lesson` folder contains an `exercises` folder. This `exercises` folder sho
 ### Project Folder
 
 The `project` folder should contain all files and instructions necessary for setup. If possible, a set of instructions should be provided for both Udacity workspaces and a way to work locally (for both MacOS and Windows OS). At a minimum, one set of instructions should be provided. A `README` template has been provided in the project folder. This template layout should be used to write your README.
+
+## Runtime Environments (Vocareum)
+
+The container's **system Python is not used** to run these notebooks (its `torch==2.9.1`
+is incompatible with the pinned `optimum-*` / `neural-compressor` stack). Two dedicated
+virtual environments are provisioned on the persistent `/voc/data` volume and exposed as
+Jupyter kernels. Select the correct kernel from the kernel picker before running a notebook.
+
+| Kernel (display name) | venv | torch | Use for |
+|---|---|---|---|
+| `venv-torch2.3` | `/voc/data/venv-torch2.3` | 2.3.1 (cu121) | Everything **except** the two notebooks below |
+| `venv-torch2.6` | `/voc/data/venv-torch2.6` | 2.6.0 (cu124) | `lesson-2_quantization_techniques/demo-1/demo.ipynb` and `lesson-2_quantization_techniques/exercise_1/solution/solution.ipynb` |
+
+Why two kernels: `demo-1` and `exercise_1` in lesson 2 quantize + freeze + save a model with
+Optimum-Quanto, which needs `optimum-quanto >= 0.2.4` (→ `torch >= 2.6`) to avoid a
+`state_dict` save crash. The rest of the course runs on the stable torch 2.3.1 stack. Every
+lesson-2 notebook states its required kernel + torch version in its first cell.
+
+Package pins for the torch 2.3 environment are in `requirements.txt`.

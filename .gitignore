@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local model checkpoints written by lesson-2 notebooks
+tinyllama_fp32/
+tinyllama_int8_quanto/
+qat_tinyllama/
+qat_tinyllama_int8/
+*.safetensors
+
+# CIFAR-10 downloaded by lesson-4 notebooks (nested anywhere in the tree)
+**/data/cifar-10-*/
+**/data/cifar-10-*.tar.gz
+
+# PyTorch profiler traces (nested anywhere in the tree)
+**/logs/profiler/
+
+# Notebook-side summary artifacts
+ptq_tinyllama_summary.json
+
+# Stray files from mistyped pip install commands (e.g. "pip install numpy>=1.17" writes >=1.17)
+=*
+
+# HuggingFace / torch caches if HF_HOME is pointed inside repo
+.cache/
