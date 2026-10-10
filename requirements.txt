@@ -27,7 +27,7 @@ triton==2.3.1
 transformers==4.45.2
 tokenizers==0.20.3
 accelerate==0.34.2
-datasets==2.19.2
+datasets==5.0.1
 evaluate==0.4.2
 peft==0.11.1
 optimum==1.27.0
