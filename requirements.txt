@@ -46,7 +46,7 @@ ml_dtypes==0.5.4
 sympy==1.14.0
 mpmath==1.3.0
 networkx==3.4.2
-pillow==12.3.0
+pillow==13.0.0
 schema==0.7.8
 
 # --- CUDA runtimes (pulled by torch, pinned for reproducibility) ---
