@@ -111,7 +111,7 @@ MarkupSafe==3.0.3
 coloredlogs==15.0.1
 humanfriendly==10.0
 exceptiongroup==1.3.1
-filelock==3.32.3
+filelock==4.2.1
 packaging==26.3
 ninja==1.13.0
 six==1.17.0
